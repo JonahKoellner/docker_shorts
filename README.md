@@ -19,7 +19,8 @@ root@pc:$ cd code
 
 ## Setup
 1. Go into the cloned Directory
-2. ```bash
+2.
+```bash
 user@pc:~/docker_shorts$ bash setup.sh
 ```
 
