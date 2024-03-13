@@ -41,7 +41,7 @@ If you run into troubles with no permissions use "bash docker_init.sh"
 ```bash
 user@pc:$ debian
 ```
-If "debian" is not found, source (zshrc or bashrc) your Shell configuration file first or restart the terminal
+If "debian" is not found, source your Shell configuration (zshrc or bashrc) file first or restart the terminal
 ```bash
 user@pc:$ source ~/.zshrc
 ```
