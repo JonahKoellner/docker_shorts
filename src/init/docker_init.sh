@@ -6,7 +6,7 @@ if [ "$system" = "Darwin" ]; then
     echo "[script] Mac System Detected."
     if [ $# -eq 1 ] && [ $1 -eq "42" ]; then
         echo "[script] Starting 42 mac Init in goinfre"
-        bash mac/42mac_init.sh
+        bash ~/.scripts/docker/init/mac/42mac_init.sh
     else
         echo "[open] Opening Docker"
         open -g -a Docker

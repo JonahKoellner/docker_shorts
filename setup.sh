@@ -20,7 +20,7 @@ cp "src/custom_container/Dockerfile" "$HOME/.scripts/docker/custom_container/" |
 echo "" >> "$SHELLCONF"
 echo "# Custom Container scripts" >> "$SHELLCONF"
 
-echo 'alias debian="docker build -t custom_debian:latest $HOME/.scripts/docker/custom_container/ && docker run -it -v $PWD:/code custom_debian:latest /bin/bash "' >> "$SHELLCONF" || { echo "Failed to append the alias to the $SHELLCONF"; exit 1; }
+echo 'alias debian="docker build -t custom_debian:latest $HOME/.scripts/docker/custom_container/ && docker run -it -v \$PWD:/code custom_debian:latest /bin/bash "' >> "$SHELLCONF" || { echo "Failed to append the alias to the $SHELLCONF"; exit 1; }
 
 # Make start docker script executable
 chmod +x "src/init/docker_init.sh" || { echo "Failed to make script executable"; exit 1; }
