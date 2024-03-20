@@ -8,14 +8,12 @@ This script will add a globaly callable initialization script.
 ## Container
 This script will add an alias "debian" with which you can create yourself a Container wherever you want.
 The container has "valgrind", "make", "cmake", "g++" preinstalled.
-It also mounts the volume where you currently are so you can edit your files outside of the Container.
+It also mounts the $PWD (where you currently are) so you can edit your files outside of the Container.
 
 To get to your mounted directory:
 ```bash
 root@pc:$ cd code
 ```
-
-(The mounting has some quirks right now, so it might be that you start at your home directory.)
 
 ## Setup
 1. Go into the cloned Directory
